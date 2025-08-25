@@ -1,0 +1,9 @@
+# build.yaml
+targets:
+  $default:
+    builders:
+      mockito|mockBuilder:
+        options:
+          # Generate mocks for test files
+          generate_for:
+            - test/**/*_test.dart
